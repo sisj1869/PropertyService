@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head {
+             background-image: url("img/navbarback.png");
+             background-color: black;
+             background-repeat: no-repeat;
+             background-size: cover;
+             height: 150px;
+        }
+        #logout {
+            float: right;
+            margin: 10px 20px 0 0;
+            font-weight: bold;
+            color: white;
+        }
+        #nav-bar {
+            display: inline-block;
+            height: 60%;
+            border: solid 1px white; 
+            margin-top: 8px;
+            width:100%;        
+        }
+        #logo {
+            color:white;
+            float: left;
+            margin: 0 0 0 60px; 
+        }
+        li {
+            list-style: none;
+            display: inline;
+        }
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+            text-align: center;
+            padding-top: 20px;
+            float: right;
+            display: inline;
+            color: white;
+            margin-top: 15px;
+            margin-right: 30px;
+        }
+        .item {
+            padding: 0 10px 0 10px;
+        }
+        #search-bar {
+            margin-top: 10px;
+            width: auto;
+            margin-left: 40px;
+            float: left;
+
+        }
+        #direct-search {
+            width: 350px;
+            height: 20px;
+        }
+        #srh-search {
+            height: 20px;
+        }
+        #search-btn {
+            color: white;
+            background-color: rgb(240, 207, 145);
+            padding:0 15px 0 15px;
+            
+        }
+        #write-btn {
+            display: inline;
+            float: right; 
+            margin-right: 100px;
+        }
+        #write-btn-btn{
+            width: 185%;
+            padding: 6px;
+            margin-top: 5px;
+            text-align: center;
+            font-weight: bold;
+            background-color: orange;
+            font-size: 15px;
+        }
+        table {
+            clear: both;
+            width:100%;
+            table-layout:fixed;
+            text-align: center;
+        }
+        #table1 {
+            margin-top: 90px;
+        }
+        p {
+            font-size: 12px;
+        }
+        td {
+            border-bottom: 1px dashed gray;
+        }
+    </style>
+</head>
+<body>
+<!--헤더 전체-->
+<header>
+<div id="head">
+<!--로그아웃 창-->
+    <div id="logout"><a href="login.html">logout</a></div>
+<!--네비게이션 창-->
+<div id="nav-bar">
+<!--로고-->
+    <div id="logo">
+        <h1>Snipning Map</h1>
+    </div>
+<!--메뉴-->
+    <ul id="menu">
+        <li class="item">Home</li>
+        <li></li>
+        <li class="item">허위매물예방</li>
+        <li></li>
+        <li class="item">피해대응메뉴얼</li>
+        <li></li>
+        <li class="item">마이페이지 </li>
+    </ul>
+</div>
+</div>
+</header>
+<!--검색창-->
+    <div id=search-bar>
+        <form>
+            <input type="text" id="direct-search" placeholder="검색어를 입력해주세요">
+            <input type="text" id="srh-search" placeholder="지역">
+            <input type="text" id="srh-search" placeholder="거래종류">
+            <input type="text"  id="srh-search" placeholder="피해유형">
+            <button type="button" id="search-btn">검색</button>
+        </form>
+    </div>
+<!--글쓰기버튼-->
+    <div id="write-btn">
+        <form><button type="button" id="write-btn-btn" ><img src="img/write.png" width="20" id="img-write">글쓰기</button></form>
+    </div>
+<!--게시판-->
+<div id=table1>
+<table>
+    <tr>
+        <th>유저</th> <th>제목</th> <th>지역</th> <th>부동산</th> <th>댓글</th> <th>추천</th> <th>평점</th>
+    </tr>
+    <tr>
+        <td>qdew영석123<br><p>2021.4.18.04.42</p></td> <td>전세사기를 당했습니다</td> <td>서울특별시</td>
+        <td>드림부동산</td> <td><img src="img/댓글.png" width="40">3</td> <td><img src=img/good.jpg width="40">5</td>
+        <td>3.9</td>
+    </tr>
+    <tr>
+        <td>qde상민123<br><p>2021.4.18.04.42</p></td> <td>허위매물 때문에 헛걸음...</td> <td>서울특별시</td>
+        <td>대박부동산</td> <td><img src="img/댓글.png" width="40">1</td> <td><img src=img/good.jpg width="40">3</td>
+        <td>3.9</td>
+    </tr>
+    <tr>
+        <td>qde성일123<br><p>2021.4.18.04.42</p></td> <td>이 부동산 가지 마세요</td> <td>서울특별시</td>
+        <td>우리부동산</td> <td><img src="img/댓글.png" width="40">4</td> <td><img src=img/good.jpg width="40">10</td>
+        <td>3.9</td>
+    </tr>
+    <tr>
+        <td>qdew해성123<br><p>2021.4.18.04.42</p></td> <td>보증금을 안돌려줘요</td> <td>서울특별시</td>
+        <td>희망부동산</td> <td><img src="img/댓글.png" width="40">0</td> <td><img src=img/good.jpg width="40">2</td>
+        <td>3.9</td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

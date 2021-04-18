@@ -600,7 +600,9 @@ progress {
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 35%;
+  margin-top: 10%;
+  align-items: center;
 }
 
 @media (min-width: 576px) {

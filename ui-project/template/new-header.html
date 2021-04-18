@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/bootstrap-css/bootstrap.css">
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/"> -->
+    <style>
+        #nav-bar {
+            display: inline-block;
+            height: 60%;
+            margin-top: 8px;
+            width:100%;     
+        }
+        .fs-4 {
+            color:white;
+            float: left;
+            margin: 0 0 0 60px; 
+        }
+        .nav-item {
+            font-weight: bold;
+            font-size: larger;
+            text-align: center;
+            display: inline;
+            color: white;
+            margin-right: 30px;
+        }
+        #background-color {
+            background-color: white;
+        }
+        #search-bar {
+            margin-top: 10px;
+            width: auto;
+            margin-left: 40px;
+            float: left;
+
+        }
+        #direct-search {
+            width: 350px;
+            height: 20px;
+        }
+        #srh-search {
+            height: 20px;
+        }
+        #search-btn {
+            color: white;
+            background-color: rgb(240, 207, 145);
+            padding:0 15px 0 15px;
+            
+        }
+        #write-btn {
+            display: inline;
+            float: right; 
+            margin-right: 100px;
+        }
+        #write-btn-btn{
+            width: 185%;
+            padding: 6px;
+            margin-top: 5px;
+            text-align: center;
+            font-weight: bold;
+            background-color: orange;
+            font-size: 15px;
+        }
+        table {
+            clear: both;
+            width:100%;
+            table-layout:fixed;
+            text-align: center;
+        }
+        #table1 {
+            margin-top: 90px;
+        }
+        p {
+            font-size: 12px;
+        }
+        td {
+            border-bottom: 1px dashed gray;
+        }
+        #footer {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+  <div id="nav-bar">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">Sniping Map</span>
+      </a>
+  
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active text-white">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">허위매물예방</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">피해대응메뉴얼</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">마이페이지</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Logout</a></li>
+      </ul>
+    </header>
+  </div>
+  <!--검색창-->
+<div id="background-color">
+  <div id=search-bar>
+    <form>
+        <input type="text" id="direct-search" placeholder="검색어를 입력해주세요">
+        <input type="text" id="srh-search" placeholder="지역">
+        <input type="text" id="srh-search" placeholder="거래종류">
+        <input type="text"  id="srh-search" placeholder="피해유형">
+        <button type="button" id="search-btn">검색</button>
+    </form>
+</div>
+<!--글쓰기버튼-->
+<div id="write-btn">
+    <form><button type="button" id="write-btn-btn" ><img src="img/write.png" width="20" id="img-write">글쓰기</button></form>
+</div>
+<!--게시판-->
+<div id=table1>
+<table>
+<tr>
+    <th>유저</th> <th>제목</th> <th>지역</th> <th>부동산</th> <th>댓글</th> <th>추천</th> <th>평점</th>
+</tr>
+<tr>
+    <td>qdew영석123<br><p>2021.4.18.04.42</p></td> <td>전세사기를 당했습니다</td> <td>서울특별시</td>
+    <td>드림부동산</td> <td><img src="img/댓글.png" width="40">3</td> <td><img src=img/good.jpg width="40">5</td>
+    <td>3.9</td>
+</tr>
+<tr>
+    <td>qde상민123<br><p>2021.4.18.04.42</p></td> <td>허위매물 때문에 헛걸음...</td> <td>서울특별시</td>
+    <td>대박부동산</td> <td><img src="img/댓글.png" width="40">1</td> <td><img src=img/good.jpg width="40">3</td>
+    <td>3.9</td>
+</tr>
+<tr>
+    <td>qde성일123<br><p>2021.4.18.04.42</p></td> <td>이 부동산 가지 마세요</td> <td>서울특별시</td>
+    <td>우리부동산</td> <td><img src="img/댓글.png" width="40">4</td> <td><img src=img/good.jpg width="40">10</td>
+    <td>3.9</td>
+</tr>
+<tr>
+    <td>qdew해성123<br><p>2021.4.18.04.42</p></td> <td>보증금을 안돌려줘요</td> <td>서울특별시</td>
+    <td>희망부동산</td> <td><img src="img/댓글.png" width="40">0</td> <td><img src=img/good.jpg width="40">2</td>
+    <td>3.9</td>
+</tr>
+</table>
+</div>
+</div>
+<footer>
+    <small class="text-white">&copy; Copyright 2021, 이상민, 지영석, 정해성, 유성일</small> 
+</footer>
+</body>
+</html>
