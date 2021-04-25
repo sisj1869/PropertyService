@@ -1,0 +1,184 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/bootstrap-css/bootstrap.css">
+
+<!-- jQuery -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+
+<!-- Bootstrap CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+
+<title>board</title>
+
+
+
+<script>
+
+	$(document).on('click', '#btnSave', function(e){
+
+		e.preventDefault();
+
+		
+
+		$("#form").submit();
+
+	});
+
+	
+
+	$(document).on('click', '#btnList', function(e){
+
+		e.preventDefault();
+
+		
+
+		location.href="${pageContext.request.contextPath}/board/getBoardList";
+
+	});
+
+</script>
+
+<style>
+
+body {
+
+  padding-top: 70px;
+
+  padding-bottom: 30px;
+
+}
+
+h2 {
+	color: white;
+}
+
+label {
+	color: white;
+}
+#nav-bar {
+            display: inline-block;
+            width:100%;
+			margin-top: -10%;
+        }
+        .fs-4 {
+            color:white;
+            float: left;
+            margin: 0 0 0 60px; 
+        }
+        .nav-item {
+            font-weight: bold;
+            font-size: larger;
+            text-align: center;
+            display: inline;
+            color: white;
+            margin-right: 30px;
+        }
+</style>
+
+</head>
+
+<body>
+
+	<div id="nav-bar">
+		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+		  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+			<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+			<span class="fs-4">Sniping Map</span>
+		  </a>
+	  
+		  <ul class="nav nav-pills">
+			<li class="nav-item"><a href="#" class="nav-link active text-white">Home</a></li>
+			<li class="nav-item"><a href="#" class="nav-link text-white">허위매물예방</a></li>
+			<li class="nav-item"><a href="#" class="nav-link text-white">피해대응메뉴얼</a></li>
+			<li class="nav-item"><a href="#" class="nav-link text-white">마이페이지</a></li>
+			<li class="nav-item"><a href="#" class="nav-link text-white">Logout</a></li>
+		  </ul>
+		</header>
+	  </div>
+
+	<article>
+
+		<div class="container" role="main">
+
+			<h2>게시글 작성</h2>
+			<br>
+
+			<form name="form" id="form" role="form" method="post" action="${pageContext.request.contextPath}/board/saveBoard">
+
+				<div class="mb-3">
+
+					<label for="title">제목</label>
+
+					<input type="text" class="form-control" name="title" id="title" placeholder="제목을 입력해 주세요">
+
+				</div>
+
+				
+
+				<div class="mb-3">
+
+					<label for="reg_id">작성자</label>
+
+					<input type="text" class="form-control" name="reg_id" id="reg_id" placeholder="이름을 입력해 주세요">
+
+				</div>
+
+				
+
+				<div class="mb-3">
+
+					<label for="content">내용</label>
+
+					<textarea class="form-control" rows="5" name="content" id="content" placeholder="내용을 입력해 주세요" ></textarea>
+
+				</div>
+
+				
+
+				<div class="mb-3">
+
+					<label for="tag">TAG</label>
+
+					<input type="text" class="form-control" name="tag" id="tag" placeholder="태그를 입력해 주세요">
+
+				</div>
+
+			
+
+			</form>
+
+			<div >
+
+				<button type="button" class="btn btn-sm btn-primary" id="btnSave">저장</button>
+
+				<button type="button" class="btn btn-sm btn-primary" id="btnList">목록</button>
+
+			</div>
+
+		</div>
+
+	</article>
+
+</body>
+
+</html>
+
+
+
