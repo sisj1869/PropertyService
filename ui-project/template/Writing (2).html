@@ -59,7 +59,7 @@
 
 body {
 
-  padding-top: 70px;
+  padding-top: 60px;
 
   padding-bottom: 30px;
 
@@ -90,6 +90,35 @@ label {
             color: white;
             margin-right: 30px;
         }
+		#title {	
+			width: 70%;
+		}
+		#name {
+			width: 70%;
+		}
+		#reg_id {
+			width: 70%;
+		}
+	    #road-address {
+			width: 70%;
+			display: inline;
+		}
+		#detail {
+			width: 70%;
+		}
+		#btnadd {
+			display: inline;
+			float: right;
+			padding: 0.5%;
+			margin-right: 20%;
+		}
+		#pihae{
+			display: inline;
+			margin-left: 5%;
+		}
+		#buy {
+			display: inline;
+		}
 </style>
 
 </head>
@@ -130,8 +159,15 @@ label {
 
 				</div>
 
-				
+				<div class="mb-3">
 
+					<label for="reg_id">부동산 이름</label>
+
+					<input type="text" class="form-control" name="name" id="name" placeholder="부동산 이름을 입력해 주세요">
+
+				</div>
+
+				
 				<div class="mb-3">
 
 					<label for="reg_id">작성자</label>
@@ -140,7 +176,50 @@ label {
 
 				</div>
 
-				
+				<div class="mb-3">
+
+					<label for="reg_id">도로명 주소</label>
+
+					<br>
+
+					<input type="text" class="form-control" name="road-address" id="road-address" placeholder="도로명 주소를 입력해 주세요">
+
+					<button type="button" class="btn btn-sm btn-primary" id="btnadd">주소찾기</button>
+
+				</div>
+
+				<div class="mb-3">
+
+					<label for="reg_id">상세 주소</label>
+
+					<input type="text" class="form-control" name="detail" id="detail" placeholder="상세 주소를 입력해 주세요">
+
+				</div>
+
+				<div class="mb-3" id="buy">
+
+					<label for="reg_id">거래종류</label>
+
+					<select>
+						<option>월세</option>
+						<option>전세</option>
+						<option>매매</option>
+					</select>
+
+				</div>
+
+				<div class="mb-3" id="pihae">
+
+					<label for="reg_id">피해유형</label>
+
+					<select>
+						<option>허위매물</option>
+						<option>보증금 미지급</option>
+						<option>전세사기</option>
+					</select>
+
+
+				</div>
 
 				<div class="mb-3">
 
