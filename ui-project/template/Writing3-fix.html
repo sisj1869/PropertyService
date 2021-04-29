@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/bootstrap-css/bootstrap.css">
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/"> -->
+    <style>
+        #nav-bar {
+            display: inline-block;
+            height: 60%;
+            margin-top: 8px;
+            width:100%;
+            background-image: url(img/background.png);    
+        }
+        .fs-4 {
+            color:white;
+            float: left;
+            margin: 0 0 0 60px; 
+        }
+        .nav-item {
+            font-weight: bold;
+            font-size: larger;
+            text-align: center;
+            display: inline;
+            color: white;
+            margin-right: 30px;
+        }
+        #all {
+            margin-left: 7%;
+            margin-right: 7%;
+            background-color: white;
+            padding-top: 5%;
+        }
+        #title1 {
+            display: inline;
+        }
+        #menu2 {
+            display: inline;
+            float: right;
+        }
+        table {
+            margin-top: -3%;
+            margin-right: 10%;
+        }
+        th {
+            padding: 0 10px 0 10px;
+            font-size: 15px;
+        }
+        td {
+            font-size: 10px;
+            color: gray;
+            text-align: center;
+        }
+        #commment-box {
+            border-bottom: solid 1px black;
+            border-top: solid 1px black;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+        #icons {
+            margin-top: 2%
+        }
+       input[type="text"] {
+            margin-top: 2%;
+            width: 88%;
+            font-size: 110%;
+            padding: 10px 0 10px 20px;
+            display: inline;
+        }
+        input[type="button"] {
+            margin-top: 2%;
+            width: 12%;
+            font-size: 110%;
+            padding: 10px 0 10px 20px;
+            display: inline;
+            float: right;
+            outline: none;
+            border: none;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+  <div id="nav-bar">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">Sniping Map</span>
+      </a>
+  
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active text-white">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">허위매물예방</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">피해대응메뉴얼</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">마이페이지</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Logout</a></li>
+      </ul>
+    </header>
+  </div>
+  <div id="all">
+    <div id="title1">
+        <h2>전세사기를 당했습니다...</h2>
+    </div>
+    <table id="menu2">
+        <tr>
+            <th>드림부동산</th> 
+            <th>전세</th> <th>전세사기</th> 
+            <th id="imo1"><img src=img/house-img.png width="15"><img src=img/house-img.png width="15"></th>  
+        </tr>
+        <tr>
+            <td>서울특별시 광진구</td> <td>거래종류</td> <td>피해유형</td> <td>평점</td>
+        </tr>
+    </table>
+   <p>
+       <img src="img/unnamed.png" id="icon" width="25"> <a >이쁘니쁘니해쏭이</a> <a>2021.04.29 14:22</a>
+   </p>
+  <div id="commment-box">
+   <p id="comment1">
+      작년에 한창 이슈되었던 강서구, 양천구 깡통전세 사기 피해자입니다.<br>
+      작년에는 아무것도 모르고 있다가, 얼마전에 집주인이 이재홍이라는 사실을 알게되었습니다...<br>
+      전세보증금반환보험 신청중이지만 상황을 보아하니 거부당할 것 같네요..<br>
+      처음 계약시 임대인은 다른 사람이었어요...<br>
+      최근 등기 상으론 제가 계약하고 확정일자 받은 후<br>
+      이재홍으로 소유권 이전 등기원인으로 등록되어 있고,<br>
+      이사 가고 전입신고 하는 날에 소유권 이전 접수가 되었네요..<br>
+      전 아무것도 모른채로...당한 것 같습니다..<br>
+   </p>
+   <p id="comment2">
+      올해 말에 전세 계약이 끝나는데,<br>
+      그래도 올 초에 알게된게 다행인건지는 모르겠습니다..<br>
+      저 말고 다른 피해자가 발생했을 것으로 보고 있는데,<br>
+      다른 분들은 어떻게 대처하였는지, 그냥 빚을 떠앉고 계시는지 정말 궁금합니다..
+   </p>
+   <p id="comment3">
+      제가 이것저것 생각해보았는데, 방법은<br>
+      1. 다른 사람에게 매매<br>
+      2. 경매 입찰<br>
+      이 두가지 방법밖에 없는 것 같더라구요...<br>
+   </p>
+   <p>
+      집이 워낙 후진 집이라 팔리지 않을것 같고..<br>
+      경매까지 기다리게 되면 은행에 전세대출 잡혀있는 상태인데, 신용불량자가 될것같고...<br>
+      지금 제가 뭐부터 준비를 해야하는지 막막하네요...
+   </p>
+  </div> 
+  <div id="icons">
+  <img src="img/good.jpg" width="40">3 &nbsp;&nbsp;&nbsp;<img src="img/댓글.png" width="40"> 3
+  </div> 
+  <form>
+      <input type="text" name="write-comment" id="write-comment" placeholder="댓글을 입력하세요" size="10">
+      <input type="button" name="name" value="댓글쓰기">
+  </form>
+  <div id=comment4>
+  </div>
+  </div>
+</body>
+
+</html>
